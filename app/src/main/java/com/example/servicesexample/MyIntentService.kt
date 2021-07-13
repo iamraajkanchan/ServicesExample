@@ -3,7 +3,6 @@ package com.example.servicesexample
 import android.app.IntentService
 import android.content.Intent
 import android.util.Log
-import androidx.core.content.withStyledAttributes
 import java.lang.Exception
 
 class MyIntentService : IntentService("MyIntentService") {
@@ -30,9 +29,9 @@ class MyIntentService : IntentService("MyIntentService") {
                 Log.d("MyIntentService", "Service is running... ")
                 Thread.sleep(1000)
             }
-        } catch (exception: Exception) {
+        } catch (exception: InterruptedException) {
             println(exception.message)
-            Thread.currentThread().interrupt()
+            Thread.currentThread().interrupt(   )
         }
     }
 }
