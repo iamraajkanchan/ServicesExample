@@ -14,7 +14,6 @@ class MyIntentService : IntentService("MyIntentService") {
     companion object {
         private lateinit var instance: MyIntentService
         var isRunning = false
-
         fun stopService() {
             Log.d("MyIntentService", "Service is stopping ")
             isRunning = false
