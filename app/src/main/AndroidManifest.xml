@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".MyIntentService" />
-        <service android:name=".MyService" />
+        <service android:name=".MyIntentService" android:enabled="true" android:exported="false" />
+        <service android:name=".MyService" android:enabled="true" android:exported="false" />
     </application>
 
 </manifest>
